@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export FLASK_APP=tinyhands
+export FLASK_DEBUG=true
+flask run
