@@ -1,7 +1,6 @@
 from flask_restful import Resource
-from tinyhands import db
 
-class Bug(Resource, db.Model):
+class Bug(Resource):
 	def get(self, id=None):
 		b = None
 		if id is None:
