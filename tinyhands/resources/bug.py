@@ -1,6 +1,6 @@
 from flask_restful import Resource
 
-class Bug(Resource):
+class BugAPI(Resource):
 	def get(self, id=None):
 		b = None
 		if id is None:

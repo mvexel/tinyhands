@@ -15,10 +15,11 @@ app.config.update(dict(
 	USERNAME='admin',
 	PASSWORD='default'
 ))
+# Override from envvar
 app.config.from_envvar('TINYHANDS_SETTINGS', silent=True)
 
 # Add API routes
-from tinyhands.resources.bug import Bug
+from tinyhands.resources.bug import BugAPI
 api.add_resource(BugAPI, '/bug', '/bug/<string:id>')
 
 if __name__ == '__main__':
